@@ -1,0 +1,9 @@
+version: "3"
+services:
+  ghen:
+    build: .
+    volumes:
+      - .:/go/src/ghen
+    env_file:
+      - scecrets.env
+    tty: true
